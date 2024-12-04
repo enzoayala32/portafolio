@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Mi Portfolio</title>
+</head>
+
+<body>
+  <!-- Sección inicio -->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1>Full Stack Junior</h1>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li>
+                <a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a>
+              </li>
+              <li>
+                <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+              </li>
+              <li>
+                <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+              </li>
+              <li>
+                <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Icono del menú responsive -->
+          <div id="icono-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- Iconos de las redes sociales -->
+          <div class="redesArriba">
+            <a href="https://github.com/enzoayala32" aria-label="GitHub de Enzo Ayala">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/enzo-ayala-410654265" aria-label="Perfil de linkedin">
+              <i class="fa-brands fa-linkedin"></i></i>
+            </a>
+            <a href="https://www.instagram.com/enzo.2020/" aria-label="Perfil de Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="presentacion">
+        <p class="bienvenida">Bienvenidos</p>
+        <h2>Soy <span>Enzo Ayala</span>, Desarrollador Web</h2>
+
+        <div id="correo">
+          <strong id="correotext">Correo : </strong>
+          <p id="textoACopiar"> ayalaenzoenrique2003@gmail.com</p>
+          <button id="copyButton" aria-label="Copiar texto"><i class="fas fa-copy"></i></button>
+
+        </div>
+        <p class="descripcion">
+          Apasionado por el desarrollo web, me especializo en crear interfaces intuitivas 
+          y funcionales, utilizando tecnologías modernas. Busco oportunidades para aportar 
+          valor en proyectos desafiantes y seguir creciendo profesionalmente.
+        </p>
+        <a href="#portfolio">Ir a Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección sobre mí -->
+  <section id="sobremi">
+    <div class="contenedor-foto">
+      <img src="media/mi foto.jpg" alt="Foto de perfil de Enzo Ayala" />
+    </div>
+    <div class="sobremi">
+      <p class="titulo-seccion">Sobre Mi</p>
+      <h2>Hola, soy <span>Enzo Ayala</span></h2>
+      <h3>Desarrollador Web</h3>
+      <p>
+        Soy un desarrollador web junior con sólidos conocimientos en tecnologías como HTML, CSS, JavaScript 
+        y frameworks como React y Node.js. Me enfoco en aprender y adaptarme rápidamente a nuevas herramientas y
+         metodologías, siempre con el objetivo de ofrecer soluciones eficientes y de alta calidad
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección habilidades -->
+  <section id="habilidades">
+    <h3 class="titulo-seccion">Habilidades Técnicas</h3>
+    <div class="contenedor-habilidades">
+      <div class="habilidad html">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="habilidad css">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+      <div class="habilidad js">
+        <i class="fa-brands fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="habilidad react">
+        <i class="fa-brands fa-react"></i>
+        <p>React</p>
+      </div>
+      <div class="habilidad node">
+        <i class="fa-brands fa-node"></i>
+        <p>Node.js</p>
+      </div>
+      <div class="habilidad express">
+        <img src="media/express.svg" alt="Express" />
+        <p>Express</p>
+      </div>
+      <div class="habilidad redux">
+        <img src="media/redux.svg" alt="Redux" />
+        <p>Redux</p>
+      </div>
+      <div class="habilidad tailwind">
+        <img src="media/tailwind.svg" alt="Tailwind CSS" />
+        <p>Tailwind CSS</p>
+      </div>
+      <div class="habilidad mui">
+        <img src="media/material-ui.svg" alt="Material UI" />
+        <p>Material UI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección portafolio -->
+  <section id="portfolio">
+    <h3 class="titulo-seccion">Mis Proyectos</h3>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="media/hotel.PNG" alt="" />
+        <div class="info">
+          <h4>Reserva hotelera</h4>
+          <p>Front-End</p>
+          <a href="https://reserva-hotelera-react.netlify.app/">Ver página</a>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="media/restaurant.PNG" alt="" />
+        <div class="info">
+          <h4>Web de restaurante</h4>
+          <p>Front-End</p>
+          <a href="https://restaurant-landing-page-tailwind.netlify.app/">Ver página</a>
+        </div>
+      </div>
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="media/carrito.PNG" alt="" />
+        <div class="info">
+          <h4>Carrito de compras</h4>
+          <p>Front-End</p>
+          <a href="https://carrito-compras-jspuro.netlify.app/">Ver página</a>
+        </div>
+      </div>
+    </div>
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="media/api-cafeteria.png" alt="" />
+        <div class="info">
+          <h4>API Cafetería</h4>
+          <p>Backend</p>
+          <a href="https://github.com/enzoayala32/Trabajo-Practico-Final-Silicon">Ver código</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección contacto -->
+  <section id="contacto">
+    <h3 class="titulo-seccion">Contactame ahora</h3>
+    <div class="contenedor-form">
+      <form action="https://formspree.io/f/xovqyowo" method="POST" id="form">
+        <div class="fila mitad">
+          <input type="text" placeholder="Nombre Completo *" class="input-mitad" name="name" required />
+          <input type="email" placeholder="Dirección de Email" class="input-mitad" name="email" required />
+        </div>
+        <div class="fila">
+          <input type="text" placeholder="Tema..." class="input-full" name="tema" required />
+        </div>
+        <div class="fila">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
+        </div>
+        <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+      </form>
+    </div>
+  </section>  
+
+  <!-- Sección footer -->
+  <footer>
+    <p>Todos los derechos reservados - 2024</p>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/enzo-ayala-410654265" aria-label="Perfil de LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/enzoayala32"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com/enzo.2020/"><i class="fa-brands fa-instagram-square"></i></a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
