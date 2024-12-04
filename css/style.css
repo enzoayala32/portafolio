@@ -541,6 +541,21 @@ footer a {
     font-size: 25px;
     text-align: center;
   }
+  #correotext {
+    font-size: 20px; 
+  }
+
+  #textoACopiar {
+    font-size: 20px; 
+  }
+
+  #copyButton {
+    width: 35px; 
+    height: 35px;
+    font-size: 18px;
+    padding: 8px;
+  }
+
  
   /* seccion HABLIDADES MI */
   .contenedor-skills {
